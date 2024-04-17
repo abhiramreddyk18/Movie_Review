@@ -1,0 +1,33 @@
+<div class="login-container">
+    <img class="film" src="assets/images/movie1.png">
+    <div class="logo">Rotten Oranges</div>
+    <div class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ex eveniet nisi vel eligendi exercitationem neque tempora
+         est doloremque a id. Voluptatem beatae quae dolorem sint
+          quod suscipit architecto sunt. Atque nihil, 
+          at dicta in nulla, vitae doloribus dolorem
+           fuga aliquam quos laborum cupiditate adipisci,
+            provident optio perspiciatis rem quidem 
+           blanditiis? Culpa rem voluptatum nobis quos
+            similique, consectetur consequatur tempore 
+    
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" id="username" class="form-control"  [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword">Password:</label>
+            <input type="password" id="password" class="form-control" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errormsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+
+    
+
+</div>
